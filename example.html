@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>make-toc example</title>
+    <style type="text/css">        
+    .targeted{
+        -webkit-animation: highlight 3s ease;
+        -moz-animation: highlight 3s ease;
+        -ms-animation: highlight 3s ease;
+        -o-animation: highlight 3s ease;
+        animation: highlight 3s ease;
+    }
+    @keyframes "highlight" {
+     from{background: red;}
+    }
+    @-moz-keyframes highlight {
+     from{background: red;}
+    }
+    @-webkit-keyframes "highlight" {
+     from{background: red;}
+    }
+    @-ms-keyframes "highlight" {
+     from{background: red;}
+    }
+    @-o-keyframes "highlight" {
+     from{background: red;}
+    }
+    </style>
+</head>
+<body>
+<div id="toc"></div>
+<h1>Memini me adesse P.</h1>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quae fere omnia appellantur uno ingenii nomine, easque virtutes qui habent, ingeniosi vocantur. Ad eas enim res ab Epicuro praecepta dantur. </p>
+
+<p>Omnia contraria, quos etiam insanos esse vultis. Quamquam id quidem, infinitum est in hac urbe; Paulum, cum regem Persem captum adduceret, eodem flumine invectio? Quis negat? Negabat igitur ullam esse artem, quae ipsa a se proficisceretur; Quare ad ea primum, si videtur; Vestri haec verecundius, illi fortasse constantius. </p>
+
+<p>Non est ista, inquam, Piso, magna dissensio. Collatio igitur ista te nihil iuvat. At enim hic etiam dolore. Quantum Aristoxeni ingenium consumptum videmus in musicis? Tertium autem omnibus aut maximis rebus iis, quae secundum naturam sint, fruentem vivere. Licet hic rursus ea commemores, quae optimis verbis ab Epicuro de laude amicitiae dicta sunt. Illis videtur, qui illud non dubitant bonum dicere -; Res enim se praeclare habebat, et quidem in utraque parte. </p>
+
+<h4>Ita multo sanguine profuso in laetitia et in victoria est mortuus.</h4>
+
+<p>Sed tempus est, si videtur, et recta quidem ad me. Me igitur ipsum ames oportet, non mea, si veri amici futuri sumus. Quare hoc videndum est, possitne nobis hoc ratio philosophorum dare. Scaevola tribunus plebis ferret ad plebem vellentne de ea re quaeri. </p>
+
+<h1>Nam memini etiam quae nolo, oblivisci non possum quae volo.</h1>
+
+<p>Cum id fugiunt, re eadem defendunt, quae Peripatetici, verba. Non minor, inquit, voluptas percipitur ex vilissimis rebus quam ex pretiosissimis. Te ipsum, dignissimum maioribus tuis, voluptasne induxit, ut adolescentulus eriperes P. An est aliquid, quod te sua sponte delectet? Uterque enim summo bono fruitur, id est voluptate. Quamquam id quidem, infinitum est in hac urbe; Qui non moveatur et offensione turpitudinis et comprobatione honestatis? Laboro autem non sine causa; Igitur neque stultorum quisquam beatus neque sapientium non beatus. At iam decimum annum in spelunca iacet. </p>
+
+<h2>Multoque hoc melius nos veriusque quam Stoici.</h2>
+
+<p>Duo Reges: constructio interrete. Non quam nostram quidem, inquit Pomponius iocans; Certe, nisi voluptatem tanti aestimaretis. Dolor ergo, id est summum malum, metuetur semper, etiamsi non aderit; Quae cum dixisset paulumque institisset, Quid est? Quis est, qui non oderit libidinosam, protervam adolescentiam? Sed tu istuc dixti bene Latine, parum plane. Utilitatis causa amicitia est quaesita. </p>
+
+<p>Quid iudicant sensus? Verum hoc idem saepe faciamus. Stoicos roga. Sunt enim prima elementa naturae, quibus auctis vírtutis quasi germen efficitur. </p>
+
+<h6>Hunc vos beatum;</h6>
+
+<p>Nihil acciderat ei, quod nollet, nisi quod anulum, quo delectabatur, in mari abiecerat. Theophrastus mediocriterne delectat, cum tractat locos ab Aristotele ante tractatos? Tamen a proposito, inquam, aberramus. Quamvis enim depravatae non sint, pravae tamen esse possunt. Res tota, Torquate, non doctorum hominum, velle post mortem epulis celebrari memoriam sui nominis. Aperiendum est igitur, quid sit voluptas; </p>
+
+<h5>Egone non intellego, quid sit don Graece, Latine voluptas?</h5>
+
+<p>Quibus ego vehementer assentior. Luxuriam non reprehendit, modo sit vacua infinita cupiditate et timore. Nescio quo modo praetervolavit oratio. Satis est ad hoc responsum. Id enim volumus, id contendimus, ut officii fructus sit ipsum officium. Nummus in Croesi divitiis obscuratur, pars est tamen divitiarum. Ut proverbia non nulla veriora sint quam vestra dogmata. Falli igitur possumus. </p>
+
+<h3>Propter nos enim illam, non propter eam nosmet ipsos diligimus.</h3>
+
+<p>Nihil enim hoc differt. Dolere malum est: in crucem qui agitur, beatus esse non potest. Eadem nunc mea adversum te oratio est. Quae hic rei publicae vulnera inponebat, eadem ille sanabat. Quae quidem vel cum periculo est quaerenda vobis; Mihi quidem Antiochum, quem audis, satis belle videris attendere. Theophrasti igitur, inquit, tibi liber ille placet de beata vita? At ille pellit, qui permulcet sensum voluptate. Egone non intellego, quid sit don Graece, Latine voluptas? Ex ea difficultate illae fallaciloquae, ut ait Accius, malitiae natae sunt. Idemque diviserunt naturam hominis in animum et corpus. Ergo hoc quidem apparet, nos ad agendum esse natos. </p>
+    
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="make-toc.js"></script>   
+<script>
+    $('body').makeTOC({
+        tocEl: '#toc',
+        smoothScroll: true
+    });    
+</script>    
+</body>
+</html>
