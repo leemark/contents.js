@@ -45,7 +45,7 @@ if(typeof Object.create !== 'function'){
                 }, 700);
                 $(target).addClass('targeted');
                 e.preventDefault();
-    });  
+            });  
         }    
     };
     
