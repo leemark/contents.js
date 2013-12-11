@@ -2,7 +2,7 @@
 if(typeof Object.create !== 'function'){
     Object.create = function( obj ){
         function F(){}
-        F.protoype = obj;
+        F.prototype = obj;
         return new F();
     };
 }
