@@ -1,14 +1,15 @@
 // object.create polyfill
-if(typeof Object.create !== 'function'){
-    Object.create = function( obj ){
-        function F(){}
+if (typeof Object.create !== 'function') {
+    Object.create = function (obj) {
+        'use strict';
+        function F() {}
         F.prototype = obj;
         return new F();
     };
 }
 
-(function( $, window, document, undefined ){
-    
+(function ($, window, document, undefined) {
+    'use strict';
     var TOC = {
         init: function( options, el ){
             var self = this;
