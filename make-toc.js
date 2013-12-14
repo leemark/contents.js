@@ -22,17 +22,17 @@ if (typeof Object.create !== 'function') {
                 self.options = $.extend({}, $.fn.makeTOC.options, options);
             }
             self.makeHeadingList(self.$el, self.tocEl);
-            if(self.options.smoothScroll){
-                self.makeSmoothScroll(self.$el, self.tocEl);  
+            if (self.options.smoothScroll) {
+                self.makeSmoothScroll(self.$el, self.tocEl);
             }
         },
-        makeHeadingList: function($el, tocEl){
+        makeHeadingList: function ($el, tocEl) {
             $("<ul/>").appendTo(tocEl);
-            $el.find(':header').each(function(){
-                var $this = $(this);
-                var htxt = $this.text();
-                var hidtxt = htxt.replace(/\W/g,'');
-                var hclass = 'toc-' + $this.prop('tagName').toLowerCase();
+            $el.find(':header').each(function () {
+                var $this = $(this),
+                    htxt = $this.text(),
+                    hidtxt = htxt.replace(/\W/g,''),
+                    hclass = 'toc-' + $this.prop('tagName').toLowerCase();
                 $this.attr('id', hidtxt);
                 $('<li/>', {addClass: hclass}).html('<a href="#' + hidtxt + '">' + htxt + '</a>').appendTo(tocEl+' ul');
             });
