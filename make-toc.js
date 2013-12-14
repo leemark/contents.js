@@ -11,15 +11,15 @@ if (typeof Object.create !== 'function') {
 (function ($, window, document, undefined) {
     'use strict';
     var TOC = {
-        init: function( options, el ){
+        init: function (options, el) {
             var self = this;
             self.el = el;
-            self.$el = $( el );
+            self.$el = $(el);
             if (typeof options === 'string') {
                 self.tocEl = options;
-            } else{
+            } else {
                 self.tocEl = options.tocEl;
-                self.options = $.extend( {}, $.fn.makeTOC.options, options );
+                self.options = $.extend({}, $.fn.makeTOC.options, options);
             }
             self.makeHeadingList(self.$el, self.tocEl);
             if(self.options.smoothScroll){
