@@ -31,10 +31,10 @@ if (typeof Object.create !== 'function') {
             $el.find(':header').each(function () {
                 var $this = $(this),
                     htxt = $this.text(),
-                    hidtxt = htxt.replace(/\W/g,''),
+                    hidtxt = htxt.replace(/\W/g, ''),
                     hclass = 'toc-' + $this.prop('tagName').toLowerCase();
                 $this.attr('id', hidtxt);
-                $('<li/>', {addClass: hclass}).html('<a href="#' + hidtxt + '">' + htxt + '</a>').appendTo(tocEl+' ul');
+                $('<li/>', {addClass: hclass}).html('<a href="#' + hidtxt + '">' + htxt + '</a>').appendTo(tocEl + ' ul');
             });
         },
         makeSmoothScroll: function($el, tocEl){
